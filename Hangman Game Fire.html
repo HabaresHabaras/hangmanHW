@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="Hangman Game Fire Stylesheet.css">
+</head>
+<body onload="winFunction()">
+    <div class "header">
+      <img src="http://www.auplod.com/u/paudola9929.png" alt="Image" border="0" />
+      <img src="http://www.auplod.com/u/ulpoada992a.png" alt="Image" border="0" /> 
+
+    </div>
+    <div class="container">
+<div class="hangmanImage">
+   <img src="Images/facepalm.lnk" alt="image" border="0">
+
+</div>
+<div class="winCounterBox">
+<h4>Press any key to get started</h4>
+<h4>Wins:</h4>
+<div id="winCounter">
+    </div>
+</div>
+<div class="currentWordBox">
+<h4>Current word</h4>
+<div id="currentWord"></div>
+</div>
+<div class="numberOfGuessesBox">
+        <h4>Number of guesses remaining</h4>
+<div id="numberOfGuesses">
+
+</div>
+
+</div>
+</div>
+<div class="alreadyGuessedBox">
+    <h3>Letters already guessed</h3>
+<div class="alreadyGuessed">
+
+</div>
+</div>
+
+    </div>
+    <script>
+        var words = [
+            "javascript",
+            "bootcamp",
+            "coding",
+            "nirvana"
+        ];
+    
+        var oneWord = words[math.floor(math.random() * words.length)];
+        var wordsGuesses = [];
+        document.getElementById(".currentWord");
+        var wordsLetters = words[0].split("");
+        var wordsGuessesState = [];
+        var lettersRemaining = oneWord.length;
+
+        while (lettersRemaining > 0) {
+
+        } 
+
+        for (i = 0; i <words.length; i++){
+            wordsGuessesState.push("_");
+        }
+        document.onkeyup = function(event){
+            var keyPressed = event.key.tolowercase();
+        for (i=0; i < wordsLetters.legth;i++){
+            if (wordsLetters[i]=== keyPressed){
+                wordsGuessesState[i] = keyPressed;
+                lettersRemaining--;
+            }
+        }
+        }
+         
+        function winFunction(){
+        var win = false;
+         document.getelementbyid("winCounter").innerHTML = "You win this time";
+         
+
+         )
+}
+        //var oneWord = words[math.floor(math.random() * words.length)];
+        //var oneWordEmpty = [];
+        //var 
+          //for (var i = 0; i < oneWord.length; i++) {
+            //oneWordEmpty[i] = '_';
+        //} 
+        //var lettersRemaining = oneWord.length;
+        //while (lettersRemaining > 0) {
+        //    print(words.join(" "));
+        //} 
+        //if (lettersRemaining = 0) {
+        //    wins++;
+        //}
+        //var userGuess = document.onkeyup = function(event) {
+          //  userGuess = event.key;
+            // for (var j = 0; j < oneWord.length; j++) {
+             //if (oneWord[j] === userGuess) {
+            //words[j] = userGuess;
+            //lettersRemaining--;}}
+
+
+        //while (lettersRemaining > 0){
+          //  alert(words.join(" "));
+            //var guess;
+            //for (var j = 0; j < word.length; j++) {
+ //if (word[j] === guess) {
+ //answerArray[j] = guess;
+ //remainingLetters--;
+ //}
+ //}
+ //}
+
+        
+        //add an event listener for every key stroke
+
+ 
+    </script>
+</body>
+</html> 
